@@ -1,10 +1,11 @@
-
 const express = require('express');
 const router = express.Router();
+const bcrypt = require('bcryptjs');
 const auth = require('../../middleware/auth');
+const jwt = require('jsonwebtoken');
+const config = require('config');
 const User = require('../../models/User');
-
-
+const { check, validationResult } = require('express-validator');
 // @route        GET api/auth
 //  @desc        Auth route
 //  @access      Public
@@ -44,7 +45,8 @@ router.post(
             .status(400)
             .json({ errors: [{ msg: 'Invalid Credentials' }] });
         }
-  
+        
+        // password stored and user's typed password check   
         const isMatch = await bcrypt.compare(password, user.password);
   
         if (!isMatch) {
