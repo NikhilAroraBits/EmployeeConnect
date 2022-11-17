@@ -14,8 +14,8 @@ const Landing = ({ isAuthenticated }) => {
         <div className="landing-inner">
           <h1 className="x-large">Employee Connect</h1>
           <p className="lead">
-            Create a Employee Connect profile/portfolio, share posts and get help from
-            others
+            Create a profile/portfolio, get hired, share posts and get help from
+            others employees and much more
           </p>
           <div className="buttons">
             <Link to="/register" className="btn btn-primary">
