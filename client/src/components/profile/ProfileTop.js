@@ -35,7 +35,7 @@ const ProfileTop = ({
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i className={`fab fa-${key} fa-2x`}></i>
+                  <i className={`fab fa-${key=="teams"? "microsoft": key} fa-2x`}></i>
                 </a>
               ))
           : null}

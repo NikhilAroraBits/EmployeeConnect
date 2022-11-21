@@ -21,7 +21,7 @@ const initialState = {
   facebook: '',
   linkedin: '',
   youtube: '',
-  instagram: ''
+  teams: ''
 };
 
 const ProfileForm = ({
@@ -71,7 +71,7 @@ const ProfileForm = ({
     facebook,
     linkedin,
     youtube,
-    instagram
+    teams
   } = formData;
 
   const onChange = (e) =>
@@ -240,12 +240,12 @@ const ProfileForm = ({
             </div>
 
             <div className="form-group social-input">
-              <i className="fab fa-instagram fa-2x" />
+              <i className="fab fa-microsoft fa-2x" />
               <input
                 type="text"
-                placeholder="Instagram URL"
-                name="instagram"
-                value={instagram}
+                placeholder="MS teams URL"
+                name="teams"
+                value={teams}
                 onChange={onChange}
               />
             </div>

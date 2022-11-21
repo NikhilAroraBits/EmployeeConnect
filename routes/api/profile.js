@@ -53,7 +53,7 @@ router.post(
         skills,
         youtube,
         twitter,
-        instagram,
+        teams,
         linkedin,
         facebook,
         // spread the rest of the fields we don't need to check
@@ -74,7 +74,7 @@ router.post(
       };
   
       // Build socialFields object
-      const socialFields = { youtube, twitter, instagram, linkedin, facebook };
+      const socialFields = { youtube, twitter, teams, linkedin, facebook };
   
       // normalize social fields to ensure valid url
       for (const [key, value] of Object.entries(socialFields)) {
