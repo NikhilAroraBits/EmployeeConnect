@@ -47,7 +47,7 @@ const Profile = ({ getProfileById, profile: { profile }, auth }) => {
                   ))}
                 </Fragment>
               ) : (
-                <h4>No experience credentials</h4>
+                <h4>No experience added yet</h4>
               )}
             </div>
 
@@ -63,7 +63,7 @@ const Profile = ({ getProfileById, profile: { profile }, auth }) => {
                   ))}
                 </Fragment>
               ) : (
-                <h4>No education credentials</h4>
+                <h4>No education background added yet</h4>
               )}
             </div>
 

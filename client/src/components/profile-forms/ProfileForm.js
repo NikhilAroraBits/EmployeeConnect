@@ -101,10 +101,10 @@ const ProfileForm = ({
             <option value="Developer">Developer</option>
             <option value="Junior Developer">Junior Developer</option>
             <option value="Senior Developer">Senior Developer</option>
-            <option value="Senior Developer">Tester</option>
-            <option value="Senior Developer">Senior Tester</option>
+            <option value="Tester">Tester</option>
+            <option value="Senior Tester">Senior Tester</option>
             <option value="Manager">Manager</option>
-            <option value="Manager">Senior Manager</option>
+            <option value="Senior Manager">Senior Manager</option>
             <option value="Student or Learning">Student or Learning</option>
             <option value="Instructor">Instructor or Teacher</option>
             <option value="Intern">Intern</option>
@@ -123,7 +123,7 @@ const ProfileForm = ({
             onChange={onChange}
           />
           <small className="form-text">
-            Could be your own company or one you work for
+            Company/Project you work for
           </small>
         </div>
         <div className="form-group">
@@ -135,7 +135,7 @@ const ProfileForm = ({
             onChange={onChange}
           />
           <small className="form-text">
-            Could be your own or a company website
+            Your website if you have any
           </small>
         </div>
         <div className="form-group">
@@ -147,7 +147,7 @@ const ProfileForm = ({
             onChange={onChange}
           />
           <small className="form-text">
-            City & state suggested (eg. Boston, MA)
+            City & Country (eg. Gurugram, India)
           </small>
         </div>
         <div className="form-group">

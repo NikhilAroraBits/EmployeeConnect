@@ -26,7 +26,7 @@ const AddEducation = ({ addEducation }) => {
     <section className="container">
       <h1 className="large text-primary">Add Your Education</h1>
       <p className="lead">
-        <i className="fas fa-code-branch" /> Add any school or bootcamp that you
+        <i className="fas fa-code-branch" /> Add any school or college that you
         have attended
       </p>
       <small>* = required field</small>
@@ -40,7 +40,7 @@ const AddEducation = ({ addEducation }) => {
         <div className="form-group">
           <input
             type="text"
-            placeholder="* School or Bootcamp"
+            placeholder="* School or College"
             name="school"
             value={school}
             onChange={onChange}
